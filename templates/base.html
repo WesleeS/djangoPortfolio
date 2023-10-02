@@ -1,0 +1,33 @@
+{% load static %}
+<html>
+    <head>
+        <title>WS Portfolio</title>
+        <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    </head>
+    <body>
+
+        <div class="topbar">
+            <h1 style="text-align: left; padding-left: 15%; font-size: 3em; color: #ebbcba; transition: all 0.3s ease-in-out;">
+                {% block title %}
+                {% endblock title %}
+            </h1>
+            <div style="text-align: right; padding-right: 2%;">
+                <h1 style="line-height: .5em;"> weslee.shear@umontana.edu</h1>
+                <h1><a style=" text-decoration: none; line-height: 0;"href="https://github.com/WesleeS"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg" width=30em, height=30em>  https://github.com/WesleeS</a></h1>
+            </div>
+                
+        </div>
+
+        <div class="sidenav">
+            <div class="{% if request.path == "/" %}active{% endif %}"><a href={% url 'home' %}>Home</a></div>
+            <div class="{% if request.path == "/projects/" %}active{% endif %}"><a href={% url 'projects' %}>Projects</a></div>
+            <div class="{% if request.path == "/resume/" %}active{% endif %}"><a href={% url 'resume' %}>Resume</a></div>
+        </div>
+        
+        <main>
+        {% block content %}
+        {% endblock content %}
+        </main>
+
+    </body>
+</html>

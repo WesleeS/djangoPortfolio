@@ -1,0 +1,15 @@
+.profileBody{
+    display: flex;
+    flex-wrap: nowrap;
+    padding-right: 5%;
+}
+.profileBody > div{
+    width: 50%;
+    margin: 20px;
+    text-align: left;
+    line-height: 75px;
+    font-size: 30px;
+}
+.profilePic{
+    box-shadow: 3px 3px 6px #6e6a86;
+}
