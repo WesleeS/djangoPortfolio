@@ -1,1 +1,0 @@
-cmd /k "cd /d C:\Users\shear\Desktop\WebDesignEnv\venv\Scripts & activate & cd /d C:\Users\shear\Desktop\WebDesignEnv\LocalRepos\djangoPortfolio & python manage.py runserver"
