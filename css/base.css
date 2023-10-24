@@ -28,7 +28,10 @@ p, li{
 
 a{
     color: #3e8fb0;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
 }
+
 a:hover{
     color:#9ccfd8;
     transition: all 0.3s ease-in-out;
