@@ -1,5 +1,6 @@
 
 {% extends "base.html" %}
+{% load static %}
 
 {% block title%}
 Projects
@@ -7,12 +8,56 @@ Projects
 
 {% block content %}
 <html>
+    
+    <link rel="stylesheet" href="{% static 'css/projects.css' %}">
 
     <p> 
-    Not much to put here, besides the <a href="https://github.com/WesleeS/djangoPages"> pages </a> assignment
-    <br>
-    Even after this assignment, I plan on developing this site more.
+    Nothing super noteworthy? Though I'll put a few things here every now and then.
     </p>
+
+    <p>
+        First up is my Django Blog app, hosted <a href="https://github.com/WesleeS/djangoBlog"> here</a>. Well, the link is in the repo to the right, but it's not hosted on gitpages due to dynamic content.
+    </p>
+
+    <p>
+        It's also worth showing off my Web Design class assignments, as although they're not highly detailed they've got a good feel to them to show competency in subjects.
+        <br>
+        Each is themed around a short demo with a species of bird as subject matter
+        <br>
+    </p>
+
+    <div class="projectContainer">
+        <div class="leftProj">
+                <h1><a href="https://weslees.github.io/MART341-WebDesign/assignment-6/homepage.html">Black-Capped Chickadee (Initial Layout)</a></h1>
+                <p>The first web design assignment-- not super flashy but it's got a great structure to it.</p>
+        </div>
+
+        <div class="rightProj">
+            <img src="../static/css/projectChicka.png" width=100%>
+        </div>
+    </div>
+
+    <div class="projectContainer">
+        <div class="leftProj">
+                <h1><a href="https://weslees.github.io/MART341-WebDesign/assignment-7/">American Robin (Dynamic Display Elements)</a></h1>
+                <p>Still nothing groundbreaking, but I was proud of the minimal Jscript for that gradient change on button input.</p>
+        </div>
+
+        <div class="rightProj">
+            <img src="../static/css/projectRobin.png" width=100%>
+        </div>
+    </div>
+
+    <div class="projectContainer">
+        <div class="leftProj">
+                <h1><a href="https://weslees.github.io/MART341-WebDesign/assignment-8/">Grey-Go-Away Bird (Media Embeds) </a></h1>
+                <p>More fun, I think I found my groove here in regards to the column formatting for the video plus the short biography.</p>
+        </div>
+
+        <div class="rightProj">
+            <img src="../static/css/projectGrey.png" width=100%>
+        </div>
+    </div>
 
 </html>
 {% endblock content %}

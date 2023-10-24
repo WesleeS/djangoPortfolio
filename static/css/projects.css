@@ -1,0 +1,49 @@
+.projectContainer{
+    display: flex;
+    margin-right: 5%;
+    margin-bottom: 2em;
+    background-color: #1f1d2e;
+    box-shadow: 3px 3px 6px #6e6a86;
+    width: 40%;
+    transition: .5s;
+
+}
+
+.projectContainer:hover{
+    background-color: #26233a;
+    width: 80%;
+    transition: 1s;
+}
+
+
+.leftProj{
+    width: 50%;
+    margin: 20px;
+    text-align: left;
+}
+
+.rightProj{
+    width: 50%;
+}
+
+.projectContainer > .leftProj > h1{
+    font-size: 1.1em;
+    transition: .5s;
+}
+.projectContainer:hover > .leftProj > h1{
+    font-size: 2em;
+    transition: .5s;
+}
+
+.projectContainer > .leftProj > p{
+    color: #e0def4;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    transition: .5s;
+}
+.projectContainer:hover > .leftProj > p{
+    font-size: 3em;
+    line-height: 1.5em;
+    transition: 1s;
+
+}
